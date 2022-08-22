@@ -1,0 +1,14 @@
+.header-top {
+  position: fixed;
+  top: 0;
+
+  background-color: #293462;
+  width: 100%;
+  color: #fff;
+  z-index: 9999;
+}
+.header-top-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}

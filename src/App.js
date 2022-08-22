@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./Footer/Footer";
+import Header from "./header/Header";
+import HeaderTop from "./headerTop/HeaderTop";
+import HomeScreen from "./Screens/HomeScreen";
+import LoginScreen from "./Screens/user-screens/LoginScreen";
+import RegisterScreen from "./Screens/user-screens/RegisterScreen";
+import "./App.css";
+import ListUsersScreen from "./Screens/ListUsersScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="py-3">
+        <HeaderTop />
+      </div>
+      <Header />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/register" element={<RegisterScreen />} />
+          <Route path="/signin" element={<LoginScreen />} />
+          <Route path="/list/hospital/users" element={<ListUsersScreen />} />
+        </Routes>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </BrowserRouter>
   );
 }
 

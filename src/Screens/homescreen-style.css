@@ -1,0 +1,20 @@
+.home-screen {
+  background: #fff;
+  color: inherit;
+  font-family: "Roboto", sans-serif;
+}
+.homescreen-info {
+  padding: 12px;
+}
+
+h2,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  color: blue;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-align: center;
+}
