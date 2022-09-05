@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card, Col, ListGroup, Row } from "react-bootstrap";
+
 import "./homescreen-style.css";
 const HomeScreen = () => {
   return (
@@ -9,7 +10,6 @@ const HomeScreen = () => {
           <Row>
             <Col>
               <h1 className="mt5">Welcome to KaYDIYEE </h1>
-              <h4>{process.env.REACT_APP_API_URL}</h4>
 
               <b>
                 KaYDIYEE a multi-purpose free healthcare website template that

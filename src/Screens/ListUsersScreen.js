@@ -64,7 +64,7 @@ const ListUsersScreen = () => {
                   <td>410222</td>
 
                   <td>
-                    <LinkContainer to={`/admin/licence/${users._id}/update`}>
+                    <LinkContainer to={`/hospital/info/${user._id}/update`}>
                       <Button variant="light">
                         <i className="fas fa-edit" />
                       </Button>
